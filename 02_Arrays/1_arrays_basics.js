@@ -37,7 +37,9 @@ console.log(myArr);                 // op -> 1,2,3,4,5
  const arr1 = [0,1,2,3,4,5];
  console.log('original',arr1);  // [ 0, 1, 2, 3, 4, 5 ]
  const arr2 = arr1.slice(1,4); // [ 1, 2, 3 ] 
- // .slice(1,4) takes a slice of  the original array from index 1 to index 4(the last index is ignored so the operation will be performed from index 1 to index 3(4-1))  and the elements from the indexes 1,2,3 i.e [ 1, 2, 3 ] will be in arr2 and the original array remains the same throughout it is similar to the stack , it only passes the copy of values
+ // .slice(1,4) takes a slice of  the original array from index 1 to index 4(the last index is ignored 
+// so the operation will be performed from index 1 to index 3(4-1))  and the elements from the indexes 1,2,3 i.e [ 1, 2, 3 ] will be in arr2 
+//and the original array remains the same throughout it is similar to the stack , it only passes the copy of values
 
  console.log('after slice',arr2);  // [ 1, 2, 3 ]
 console.log('after slice ,the original array is ',arr1);// [0,1,2,3,4,5]
@@ -49,4 +51,7 @@ console.log('after slice ,the original array is ',arr1);// [0,1,2,3,4,5]
  console.log('original',array1)  //  [ 0, 40, 50 ]
  console.log('after splice',array2)  // [ 10, 20, 30 ]
 
- // .splice(0,3) so the array from index 1 to 3(last index is included) i.e [10 ,20 ,30] is stored in array2 and those elements are spliced or simply are cutted from the original array and the size of original array and elements in it is changed                                  so the original array now becomes of the elements remaining after the splice i.e [40 ,50 ] . splice is like heap , it passes the original values  and after splice the original values get changes too.
+ // .splice(0,3) so the array from index 1 to 3(last index is included) i.e [10 ,20 ,30] is stored in array2 
+//and those elements are spliced or simply are cutted from the original array and the size of original array and elements in it is changed
+// so the original array now becomes of the elements remaining after the splice i.e [40 ,50 ] . 
+//splice is like heap , it passes the original values  and after splice the original values get changes too.
