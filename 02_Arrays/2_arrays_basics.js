@@ -1,36 +1,40 @@
-const marvel_heros = ['ironMan','spiderMan','captainAmerica']
-const dc_heros = ['batman','superman','flash']
-marvel_heros.push(dc_heros)
-console.log(marvel_heros)  
-// ['ironMan','spiderMan','captainAmerica',[ 'batman', 'superman', 'flash']
+const ind_bat = ['Kohli','Sachin','Dhoni']
+const ind_bowl = ['Shami','Chahal','Bumrah']
+ind_bat.push(ind_bowl)
+console.log(ind_bat)
+// //[ 'Kohli', 'Sachin', 'Dhoni', [ 'Shami', 'Chahal', 'Bumrah' ] ]
+console.log(ind_bat[3]) // [ 'Shami', 'Chahal', 'Bumrah' ]
 
-console.log(marvel_heros[3]) // [ 'batman', 'superman', 'flash' ]
+// .concat() 
+//  Combines two or more arrays. This method returns a new array without modifying any existing arrays. the previous array remain same
 
-const allHeros = marvel_heros.concat(dc_heros);
-console.log(allHeros);
-// ['ironMan','spiderMan','captainAmerica','batman','superman','flash']
-//  concat returns a new array
+const ind_team = ind_bat.concat(ind_bowl);
+console.log(ind_team);
+// [ 'Kohli', 'Sachin', 'Dhoni', 'Shami', 'Chahal', 'Bumrah' ]
+
 
 //......................................................................
 
 // spread operator  -> a better way apporach than .concat()
-const marvel = ['ironMan','spiderMan','captainAmerica']
-const dc = ['batman','superman','flash']
-const spreadAllHeros = [...marvel,...dc];
-console.log(spreadAllHeros);
+const bat = ["kohli","Dhoni","Sachin"]
+const bowl = ['Shami','Siraj','Chahal']
+const team = [...bat , ...bowl];
+console.log(team);
 
-// ['ironMan','spiderMan','captainAmerica','batman','superman','flash']
-//......................................................................
+// [ 'kohli', 'Dhoni', 'Sachin', 'Shami', 'Siraj', 'Chahal' ]
+
 
 // Array.from() and Array.of() operations on array
-
-const makeArray = Array.from("VARUN");
+const sample = "VARUN" ;
+const makeArray = Array.from(sample);
 console.log(makeArray); // [ 'V', 'A', 'R', 'U', 'N' ]
 
-const firstName = 'varun'
-const lastName = 'chandola'
-const country = 'india'
-const state = 'uttarakhand'
+console.log(Array.isArray(sample)); // false
+
+const firstName = 'Varun'
+const lastName = 'Chandola'
+const country = 'India'
+const state = 'Uttarakhand'
 
 const arrOf = Array.of(firstName,lastName,country,state);
 console.log(arrOf); // [ 'varun', 'chandola', 'india', 'uttarakhand' ]
