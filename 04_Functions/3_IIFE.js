@@ -1,4 +1,5 @@
 // IIFE -> Immediately Invoked Function Expression ()()
+// ()() ; => ; stops the context
 
 function one(){
     console.log("DB CONNECTED");
@@ -17,7 +18,8 @@ one(); // function call
 
 (function add(num1,num2){
     console.log(num1+num2) // 30
-})(10,20); // we have to add ; because this exectution will not stop itself
+})(10,20); // we have to add ; because this exectution will not stop itself . 
+// ()() ; => ; stops the context
 
 (function hello(name){
     console.log(`hi ${name}`); // hi Varun
