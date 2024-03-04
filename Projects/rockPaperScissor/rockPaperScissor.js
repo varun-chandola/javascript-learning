@@ -142,6 +142,36 @@ let clickedScissor = ()=>{
     tieMatch.innerHTML = `${tie}`;
 }
 
+
+
+function resetGame(){
+    let move = document.querySelector('.move');
+    move.innerHTML = `You : Chose any move <br>Computer : Will Chose after your move `;
+
+    youScore.youWin = 0 ;
+    youScore.youLoss = 0 ;
+    computerScore.computerWin = 0 ;
+    computerScore.computerLoss = 0;
+    tie = 0;
+
+    let pwin = document.getElementById('pwin');
+    pwin.innerHTML = `${youScore.youWin}`;
+    
+    let ploss = document.getElementById('ploss');
+    ploss.innerHTML = `${youScore.youLoss}`;
+
+    let cwin = document.getElementById('cwin');
+    cwin.innerHTML = `${computerScore.computerWin}`;
+    
+    let closs = document.getElementById('closs');
+    closs.innerHTML = `${computerScore.computerLoss}`;
+
+    let tieMatch = document.querySelector('.tied');
+    tieMatch.innerHTML = `${tie}`;
+}
+
+
 rock.addEventListener('click' , clickedRock)
 paper.addEventListener('click' , clickedPaper)
 scissor.addEventListener('click' , clickedScissor)
+document.getElementById('reset').addEventListener('click', resetGame);
