@@ -1,0 +1,41 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card{
+    background-color: white;
+    height:300px;
+    width:500px;
+    margin-top : 100px;
+    margin-left: 300px;
+}
+.new{
+    background-color: brown;
+    color: white;
+    border:none;
+    width:80%;
+    margin-left:50px;
+    padding:5px 0px;
+}
+.tweet{
+    background-color: blue;
+    border:none;
+    width:80%;
+    color:white;
+    margin-left:50px;
+    padding:5px 0px;
+    margin-top:10px;
+}
+.tweet:hover , .new:hover{cursor: pointer;}
+.quote{
+    height:150px;
+    width:80%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top : 10px;
+    margin-left:50px;
+}
