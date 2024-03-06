@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+body{
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    background: linear-gradient(to right, #004e92, #000428);
+    font-family: "Madimi One", sans-serif;
+    color : wheat;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    height:120px;
+    width:160px;
+    border-radius : 20px; 
+    margin : 5px;
+    font-size: 45px;
+}
+
+#reset{
+    width:140px;
+    height:40px;
+    border: none;
+    font-size:20px;
+    background-color: aqua;
+}
+
+.game{
+    display : grid;
+    grid-template-columns: auto auto auto;
+}
