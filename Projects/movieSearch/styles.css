@@ -1,0 +1,61 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color: #212121;
+}
+
+main{
+    margin:0px 30px;
+}
+
+#search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin : 20px 0px;
+}
+
+button{
+    padding:20px;
+    margin-left : 10px;
+    font-size:20px;
+    border-radius:30px;
+    background-color:yellow;
+    font-weight: bolder;
+}
+
+input{
+    padding:15px;
+    width:70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:40px;
+    border:none;
+    font-weight: bolder;
+    border-radius:30px;
+}
+
+.card{
+    height:430px;
+    width:215px;
+    border:1px solid white;
+    color:white;
+    overflow : hidden;
+    padding:10px 10px;
+    border-radius:10px;
+    margin:5px 3px;
+}
+
+img{
+    height: 235px;
+    width: 215px;
+}
+
+.card:hover {
+    opacity: 0.6;
+    cursor:pointer;
+    transition: 0.4s;
+}
